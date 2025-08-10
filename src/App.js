@@ -103,7 +103,7 @@ function App() {
         .join(" ")
         .replace(/[^a-zA-Z0-9 ]/g, "")
         .toUpperCase();
-      const fileName = `${invoice.invoiceNo || `invoice_${start + i + 1}`}.pdf`;
+      const fileName = `${invoice.rrn || `invoice_${start + i + 1}`}.pdf`;
       console.log(invoice,'checkinginsin')
 
       const html = ReactDOMServer.renderToStaticMarkup(
